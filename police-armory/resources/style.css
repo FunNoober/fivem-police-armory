@@ -1,0 +1,114 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("ROBOTO-REGULAR.TTF");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-family: "Roboto";
+}
+
+*::-webkit-scrollbar{
+    display: none;
+}
+
+body, html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.armory{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+
+.armory-container{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.weapon-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    min-width: 350px;
+    max-width: 350px;
+    margin-top: 15px;
+    margin-right: 15px;
+    width: 100%;
+    min-height: 75px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 25px;
+    margin: 15px;
+}
+
+.flex-horizontal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.add-attachement-button, .add-weapon-button{
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+    background-color: limegreen;
+    color: white;
+    border-radius: 100%;
+    font-size: 14pt;
+    transition: background-color 500ms;
+}
+
+.add-attachement-button:hover, .add-weapon-button:hover{
+    background-color: rgb(53, 173, 53);
+}
+
+.weapon-title, .weapon-attachements{
+    align-items: center;
+    display: flex;
+}
+
+h3, h2{
+    padding-right: 5px;
+    width: 100%;
+    color: white;
+}
+
+#close-button{
+    min-width: 25px;
+    min-height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+    background-color: red;
+    color: white;
+    border-radius: 100%;
+}
