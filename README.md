@@ -1,4 +1,3 @@
-> **If You use this script in your server, then credit "Fun Noober"**
 ## What Is It?
 A standalone and simple police armory script that allows police officers to go to a police station to edit their loadouts. Uses a clean and efficient user interface with no bloated dependencies.
 ## Why?
